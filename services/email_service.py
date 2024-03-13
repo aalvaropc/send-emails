@@ -16,7 +16,7 @@ def send_email(email_parts: List[str], subject: str, body: str, date: datetime, 
         server.login(USERNAME, PASSWORD)
         
         for part in email_parts:
-            to_email = f"{part}@gmail.com"
+            to_email = f"{part}@emeal.nttdata.com"
             
             message = MIMEMultipart()
             message['From'] = USERNAME
